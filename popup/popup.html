@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>法律文书下载</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>📄 法律文书下载助手</h2>
+
+    <!-- 状态提示区 -->
+    <div id="statusBar" class="status-checking">
+      🔍 检测页面中...
+    </div>
+
+    <!-- 文书列表区 -->
+    <div id="docArea" class="hidden">
+      <div class="doc-count">
+        共找到 <span id="docCount">0</span> 份文书
+      </div>
+
+      <div id="docList"></div>
+
+      <button id="downloadAllBtn" class="btn-download">
+        ⬇️ 一键下载全部
+      </button>
+    </div>
+
+    <!-- 进度区 -->
+    <div id="progressArea" class="hidden">
+      <div class="progress-text" id="progressText">准备下载...</div>
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <div id="progressDetail"></div>
+    </div>
+
+    <!-- 完成区 -->
+    <div id="doneArea" class="hidden">
+      <div class="done-icon">✅</div>
+      <div>下载完成！</div>
+      <div class="done-tip">文件保存在下载文件夹 / 法律文书 目录</div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
